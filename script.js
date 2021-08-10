@@ -9,12 +9,7 @@ $(function(){
         }
     });
     $("#dataGrid").dxDataGrid({
-        columns:["ProductID","ProductName","Category.CategoryID","Category.CategoryName"],
-        dataSource: new DevExpress.data.DataSource({
-            store: oDataContext.Products,
-            select: ['ProductID', 'ProductName', 'Category.CategoryID', 'Category.CategoryName'],
-            expand: ['Category'],
-            filter: ['Category.CategoryID', '=', 5]
+        columns:["ProductID","ProductName","Category.CategoryID","Category.CategoryName"]
         })
     });
 });
